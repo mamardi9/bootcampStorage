@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Documents</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="sidebar">
+    <a href="/welcome">Back to Welcome</a>
+    <a href="/documents/list">View Your Documents</a>
+    <a href="/documents/list">Create Document</a>
+    <a class="active" href="/documents/search-form">Search Documents</a>
+    <a href="/logout">Logout</a>
+</div>
+<div class="content">
+    <h2>Search Documents</h2>
+    <main>
+        <form action="/documents/search" method="get">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Document name"><br><br>
+            <label for="description">Description:</label><br>
+            <input type="text" id="description" name="description" placeholder="Document description"><br><br>
+            <label for="size">Size:</label><br>
+            <input type="number" id="size" name="size" placeholder="Document size"><br><br>
+            <label for="metadataKey">Metadata Key:</label><br>
+            <input type="text" id="metadataKey" name="metadataKey" placeholder="Key"><br><br>
+            <label for="metadataValue">Metadata Value:</label><br>
+            <input type="text" id="metadataValue" name="metadataValue" placeholder="Value"><br><br>
+            <button type="submit">Search</button>
+        </form>
+    </main>
+</div>
+</body>
+</html>
+

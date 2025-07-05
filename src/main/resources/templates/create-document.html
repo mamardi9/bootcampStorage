@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <a href="/welcome">Back to Welcome</a>
+    <a class="active" href="/documents/create">Create a Document</a>
+    <a href="/documents/list">View Your Documents</a>
+    <a href="/documents/search-form">Search Documents</a>
+    <a href="/logout">Logout</a>
+</div>
+
+<div class="content">
+
+    <h2>Create a New Document</h2>
+
+    <form action="/documents/create" method="post" enctype="multipart/form-data">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required="required"><br><br>
+            <label for="description">Description:</label><br>
+            <input type="text" id="description" name="description" required="required"><br><br>
+            <label for="file">Upload File:</label><br>
+            <input type="file" id="file" name="file" required="required"><br><br>
+            <button type="submit">Create Document</button>
+    </form>
+</div>
+
+</body>
+</html>
+
+

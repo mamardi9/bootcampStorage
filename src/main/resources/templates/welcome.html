@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <a class="active" href="/welcome">Back to Welcome</a>
+    <a href="/documents/create">Create a Document</a>
+    <a href="/documents/list">View Your Documents</a>
+    <a href="/documents/search-form">Search Documents</a>
+    <a href="/logout">Logout</a>
+</div>
+
+<div class="content">
+    <h1>Welcome, <span th:text="${username}"></span>!</h1>
+</div>
+
+</body>
+</html>
+
+

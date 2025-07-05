@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="sidebar">
+    <a href="/welcome">Back to Welcome</a>
+    <a href="/documents/create">Create a Document</a>
+    <a href="/documents/list">View Your Documents</a>
+    <a href="/documents/search-form">Search Documents</a>
+    <a href="/logout">Logout</a>
+</div>
+<div class="content">
+    <h2>Edit Document</h2>
+    <form action="/documents/update" method="post">
+        <input type="hidden" name="id" th:value="${document.id}" />
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" th:value="${document.name}" required="required"><br><br>
+        <label for="description">Description:</label><br>
+        <input type="text" id="description" name="description" th:value="${document.description}" required="required"><br><br>
+        <button type="submit">Update Document</button>
+    </form>
+</div>
+</body>
+</html>
+
+
+
+
